@@ -11,6 +11,7 @@
     </head>
     <body>
 <h1>Pages</h1>
+<hr/>
 <ul>
   <li><a href="view_collection">Collection Viewer</a></li>
   <li><a href="annotated">Annotated Bibliography Viewer</a></li>
