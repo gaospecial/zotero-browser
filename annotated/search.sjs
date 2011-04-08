@@ -21,11 +21,12 @@
 
 <script type="text/html" id="template">
     <![CDATA[
-
- <%= unescape(this.citation) %>
+<a href="zotero://select/item/<%= this.id %>"> 
+<%= unescape(this.citation) %>
+</a>
 <ul id="info"> 
 <% if ( this.abstract ) { %>
-  <h3><a href="zotero://select/item/<%= this.id %>"> <img src="../static/images/zotero-z-16px.png" alt="link to zotero item"></a>Abstract</h3><%= unescape(this.abstract) %>
+  <h3>Abstract</h3><%= unescape(this.abstract) %>
 <% } %>
 </ul>
 

@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Collection Viewer</title>
-		<link rel="stylesheet" type="text/css" media="all" href="static/css/elastic.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="static/css/local.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../static/css/elastic.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../static/css/local.css" />
 		<script src="../static/js/jquery.js" type="text/javascript" language="javascript" charset="utf-8"></script>
 		<script src="../static/css/elastic.js" type="text/javascript" language="javascript" charset="utf-8"></script>
         <script src="../static/js/jquery-1.4.2.min.js" type="text/javascript"></script>

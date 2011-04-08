@@ -16,11 +16,11 @@
             <form name="bib_search"  action="search.sjs" method="get">
                 <fieldset>
                 <input name="submit" type="submit" value="Do Search">
-                </fieldset></li>			
+                </fieldset>			
 
 		<div class="columns on-2" style="background:white">
 			<div class="container">
-				<div class="column">
+				<div class="column fixed">
 					<div class="container">
                     <li><fieldset>
                     <legend>Tags to search for (AND only) </legend>
@@ -28,37 +28,22 @@
                     </fieldset></li>
                                         </div>
 				</div>
-				<div class="column">
+				<div class="column fixed">
 					<div class="container">
                     <li><fieldset>
                     <legend>Collections to search in (AND only)</legend>
                     <?sjs pow_include('lib/get_collections.js'); ?>
                     </fieldset></li>
-                                        </div>
-                <fieldset>
-                <input name="submit" type="submit" value="Do Search">
-                </fieldset></li>			
+          </div>
+		
 				</div>
 			</div>
 		</div>
-                <li>
-</ul></form>
+		<fieldset>
+    <input name="submit" type="submit" value="Do Search">
+    </fieldset>	
+</form>
+</ul>
 
-    <div class="columns on-2">
-        <div class="container">
-
-            <div class="column">
-                <div class="container">
-                </div>
-            </div>
-            <div class="column">
-                <div class="container">
-                </div>
-            </div>
-
-                </form>
-
-        </div>
-    </div>
     </body>
 </html>
