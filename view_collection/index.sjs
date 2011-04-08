@@ -10,7 +10,9 @@
         <script src="../static/js/jquery.jqote2.min.js" type="text/javascript"></script>
     </head>
     <body>
-
+<script type="text/javascript">
+console.debug("console log");
+</script>
 <?sjs
 var z = Components.classes["@zotero.org/Zotero;1"] .getService(Components.interfaces.nsISupports).wrappedJSObject;
 
@@ -19,6 +21,15 @@ var render_collection = function(coll) {
         coll = null; 
     }
     var collections = z.getCollections(coll);
+		/** dubug
+		var myobj = collections;
+		for (mykey in myobj){  
+         for (key in myobj[mykey]){
+				   document.writeln( "myobj[" + mykey + "][" + key + "] = " + myobj[mykey][key] ) + "<br />";
+				 }
+				 //alert ("myObj["+mykey +"] = "+myobj[mykey]);
+            } 
+		*/
     document.writeln("<ul>");
     for (c in collections) {
         document.writeln('<li>' + '<a href="view_collection.sjs?name=' + encodeURI(collections[c].name) + '&id=' + collections[c].id + '">' + collections[c].name  + '</a></li>');
